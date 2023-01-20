@@ -14,7 +14,7 @@ describe('Teste no componente NotFound', () => {
   });
 
   it('Testa se a pagina mostra a imagem', () => {
-    renderWithRouter(<NotFound />)
+    renderWithRouter(<NotFound />);
     const getImage = screen.getByRole('img', {
       name: /pikachu crying because the page requested was not found/i,
     });
