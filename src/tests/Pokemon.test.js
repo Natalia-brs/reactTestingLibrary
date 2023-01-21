@@ -46,7 +46,7 @@ describe('Teste no componente Pokemon', () => {
     });
     userEvent.click(checkbox);
 
-    const starImg = screen.getByAltText('Pikachu is marked as favorite');
-    expect(starImg).toHaveAttribute('src', '/star-icon.svg');
+    const star = screen.getByAltText('Pikachu is marked as favorite');
+    expect(star).toHaveAttribute('src', '/star-icon.svg');
   });
 });
